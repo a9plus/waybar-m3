@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 54,
+    "spacing": 8,
+
+    "modules-left": [
+        "custom/firefox",
+        "custom/terminal",
+        "custom/crazycattle"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory"
+    ],
+
+    "custom/firefox": {
+        "format": "public",
+        "tooltip": false,
+        "on-click": "firefox"
+    },
+
+    "custom/terminal": {
+        "format": "terminal",
+        "tooltip": false,
+        "on-click": "alacritty"
+    },
+
+    "custom/crazycattle": {
+        "format": "sports_esports",
+        "tooltip": false,
+        "on-click": "crazycattle3d"
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %b %d}",
+        "tooltip": true,
+        "tooltip-format": "{:%A, %B %d, %Y}"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "volume_off MUTED",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi": "SSID {essid}",
+        "format-ethernet": "lan Wired",
+        "format-disconnected": "wifi_off DISCONNECTED",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "RAM {percentage}%",
+        "tooltip": false
+    }
+}

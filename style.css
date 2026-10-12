@@ -1,0 +1,112 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e0e3ff;
+}
+
+/* Tooltips */
+
+tooltip {
+    background: #191b24;
+    color: #e0e3ff;
+    border: 2px solid #aab4ff;
+    border-radius: 12px;
+}
+
+tooltip label {
+    font-family: "Ubuntu", sans-serif;
+    color: #e0e3ff;
+    padding: 5px;
+}
+
+/* Circular launchers */
+
+#custom-firefox,
+#custom-terminal,
+#custom-crazycattle {
+    font-family: "Material Symbols Rounded";
+    font-size: 23px;
+    font-weight: normal;
+
+    background: #343d78;
+    color: #e0e3ff;
+
+    border: 2px solid #aab4ff;
+    border-radius: 50%;
+
+    min-width: 42px;
+    min-height: 42px;
+
+    margin: 4px 0;
+    padding: 0;
+}
+
+/* Clock */
+
+#clock {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+
+    background: #252d60;
+    color: #e0e3ff;
+
+    border: 2px solid #aab4ff;
+    border-radius: 999px;
+
+    padding: 0 18px;
+    margin: 4px 0;
+}
+
+/* Volume, Wi-Fi, CPU and RAM */
+
+#pulseaudio,
+#network,
+#cpu,
+#memory {
+    background: #252d60;
+    color: #e0e3ff;
+
+    border: 2px solid #aab4ff;
+    border-radius: 999px;
+
+    padding: 0 13px;
+    margin: 4px 0;
+}
+
+/* Hover */
+
+#custom-firefox:hover,
+#custom-terminal:hover,
+#custom-crazycattle:hover {
+    background: #414b8d;
+    border-color: #d5d9ff;
+}
+
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover {
+    background: #343d78;
+    border-color: #d5d9ff;
+}
+
+/* Special states */
+
+#pulseaudio.muted {
+    color: #c5c9e8;
+}
+
+#network.disconnected {
+    color: #ffb4ab;
+}
